@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.757
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CityCoordinatesAPI", "CityCoordinatesAPI\CityCoordinatesAPI.csproj", "{BB793D88-BF9E-4F8B-966F-7B955C3B7228}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CityCoordinatesAPI.Tests", "CityCoordinatesAPI.Tests\CityCoordinatesAPI.Tests.csproj", "{125C026F-C3CA-47DE-9D17-4436177A04E3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BB793D88-BF9E-4F8B-966F-7B955C3B7228}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB793D88-BF9E-4F8B-966F-7B955C3B7228}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB793D88-BF9E-4F8B-966F-7B955C3B7228}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB793D88-BF9E-4F8B-966F-7B955C3B7228}.Release|Any CPU.Build.0 = Release|Any CPU
+		{125C026F-C3CA-47DE-9D17-4436177A04E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{125C026F-C3CA-47DE-9D17-4436177A04E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{125C026F-C3CA-47DE-9D17-4436177A04E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{125C026F-C3CA-47DE-9D17-4436177A04E3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {402CA272-D9FD-4801-90A1-8DE4FD65DA28}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="View.css">
+    <!-- production Vue.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <!-- Using Axios to consume APIs -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+
+    <div id="app">
+
+        <h1>Cities & Their Weather On 2019-07-04 @ Noon Local Time</h1>
+
+        <section v-if="errored">
+            <p>APIs unavailable, please try again later</p>
+        </section>
+
+        <section v-else>
+            <div v-if="loading">Loading...</div>
+
+            <select v-model="selected" v-on:change="callDarkSky">
+                <option v-for="option in options" v-bind:value="option.value">
+                    {{ option.text }}
+                </option>
+            </select>
+            <br/><br/>
+            <span>Coordinates: {{ selected }}</span>
+        </section>
+
+        <section v-if="darkSkyInfo">
+            <p>Weather Summary: {{ darkSkyInfo.currently.summary }}</p>
+            <p>Temperature: {{ darkSkyInfo.currently.temperature }}</p>
+            <p>UV Index: {{ darkSkyInfo.currently.uvIndex }}</p>
+        </section>
+    </div>
+
+    <!--Contains the SECRET_KEY-->
+    <script type='text/javascript' src='config.js'></script>
+    <script type='text/javascript' src="View.js"></script>
+</body>
+
+</html>
