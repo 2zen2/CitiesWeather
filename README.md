@@ -10,8 +10,10 @@ var config = {
     SECRET_KEY: '[YOUR_SECRET_KEY]'
 }
 ```
-3. Build and run CityCoordinatesAPI with IIS Express for a locally served API at port 44354.
+3. Make sure you have .NET Core SDK 2.2 installed on your machine. You can find them here: https://dotnet.microsoft.com/download/dotnet-core/2.2
 
-4. Open View.html for a simple UI built with Vue.js + Axios.
+4. Build and run CityCoordinatesAPI with IIS Express for a locally served API at port 44354.
+
+5. Open View.html for a simple UI built with Vue.js + Axios.
 
 xUnit testing project included with the CityCoordinatesAPI solution with 20 tests.
